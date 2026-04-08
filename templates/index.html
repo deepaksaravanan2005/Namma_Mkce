@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus AI Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="landing-page">
+    <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+        <div class="text-center">
+            <h1 class="display-4 mb-4">Welcome to Campus AI Assistant</h1>
+            <p class="lead mb-4">Your intelligent companion for all college-related queries. Get instant answers about timetables, fees, departments, and more!</p>
+            <a href="{{ url_for('chat') }}" class="btn btn-primary btn-lg">Start Chatting</a>
+            <br><br>
+            <a href="{{ url_for('admin_login') }}" class="btn btn-outline-light">Admin Login</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
