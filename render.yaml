@@ -4,15 +4,7 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn --bind 0.0.0.0:$PORT app:app
+    startCommand: gunicorn app:app
     envVars:
       - key: PYTHON_VERSION
-        value: 3.10.13
-      - key: FLASK_DEBUG
-        value: "0"
-      - key: SECRET_KEY
-        generateValue: true
-      - key: DATABASE_URL
-        value: sqlite:///instance/chatbot.db
-      - key: GEMINI_API_KEY
-        sync: false
+        value: 3.11.9
